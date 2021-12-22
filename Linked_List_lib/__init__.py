@@ -12,4 +12,4 @@ from .__about__ import (
 
 
 # this is for "from <package_name> import *"
-__all__ = [,]
+__all__ = []
