@@ -4,3 +4,16 @@
 #
 #  License: BSD 3-Clause License
 
+from Linked_List_lib import sll_node
+
+curr = head = sll_node(1)
+curr.next = sll_node(2)
+curr = curr.next
+curr.next = sll_node(3)
+curr = curr.next
+curr.next = sll_node(4)
+curr = curr.next
+curr.next = sll_node(5)
+
+print(head)
+
