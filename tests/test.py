@@ -16,4 +16,9 @@ curr = curr.next
 curr.next = sll_node(5)
 
 print(head)
+print(head.middle)
+head = head.reversed
+print(head)
+head = head.reversed
+print(head)
 
