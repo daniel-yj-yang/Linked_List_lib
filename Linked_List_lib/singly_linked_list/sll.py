@@ -17,11 +17,14 @@ class sll_node(object):
     
     def __str__(self) -> str:
         """for print(node)"""
+        if not self:
+            return "None"
         curr = self
-        res = curr.__repr__()
+        res = curr.__repr__() + " -> "
         while curr.next:
             curr = curr.next
-            res += f" -> {curr.__repr__()}"
+            res += f"{curr.__repr__()} -> "
+        res += "None"
         return res
 
     @property
